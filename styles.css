@@ -105,7 +105,8 @@ h1 {
 .header-content {
     display: flex;
     flex-direction: row;
-    padding: 120px 150px 0px 150px;
+    width: 1140px;
+    padding: 0px 150px;
     margin-top: 120px;
 }
 
@@ -119,7 +120,9 @@ h1 {
 
 .our_plants {
     text-align: center;
-    padding: 113px 138px 0px 138px;
+    width: 1140px;
+    padding: 0px 150px;
+    margin-top: 113px;
 }
 
 .h2_title {
@@ -258,6 +261,8 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, auto);
+  width: 1148px;
+  padding: 0px 150px;
   gap: 20px;
 }
 
@@ -322,6 +327,94 @@ h1 {
   grid-row: 1 / span 2;
 }
 
+
+
+
+/* subscribe section styles */
+
+
+/* Section container */
+.subscribe-section {
+  position: relative;
+  background: url('./assets/news-letter-bg.png') center/cover no-repeat;
+  width: 1440px;
+  height: 533px;
+  margin-top: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay */
+.subscribe-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+/* Centered content */
+.subscribe-content {
+    background: transparent;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.subscribe-content h2 {
+    background: transparent;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.subscribe-form {
+    background: transparent;
+    width: 830px;
+  display: flex;
+  background: white;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Input */
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Button */
+.subscribe-form button {
+  background: #f4511e; /* orange color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: #d84315;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+  }
+}
 
 
 
